@@ -1,12 +1,13 @@
 module.exports = {
   moduleNameMapper: {
     '@core/(.*)': '<rootDir>/src/app/core/$1',
+    '^src/(.*)$': '<rootDir>/src/$1'
   },
   preset: 'jest-preset-angular',
   setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
   bail: false,
   verbose: false,
-  collectCoverage: false,
+  collectCoverage: true,
   coverageDirectory: './coverage/jest',
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
   coveragePathIgnorePatterns: ['<rootDir>/node_modules/'],
@@ -16,7 +17,7 @@ module.exports = {
     },
   },
   roots: [
-    "<rootDir>"
+    "<rootDir>/src/"
   ],
   modulePaths: [
     "<rootDir>"
