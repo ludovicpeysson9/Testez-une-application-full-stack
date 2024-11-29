@@ -22,7 +22,7 @@
       "es2020",
       "dom"
     ],
-    "types": ["jest"]
+    "types": ["jest", "cypress"]
     ,
     "paths": {
         "src/*": ["./src/*"]
@@ -34,6 +34,7 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
+  "include" : ["**/*.ts"],
   "exclude": ["cypress",
     "cypress/**/*.ts",
     "cypress.config.ts"
