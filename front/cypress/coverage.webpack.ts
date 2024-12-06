@@ -12,7 +12,7 @@ export default {
         enforce: 'post',
         include: path.join(__dirname, '..', 'src'),
         exclude: [
-          /\.(e2e|spec)\.ts$/,  // Exclure les fichiers de test
+          /\.(e2e|spec)\.ts$/, // Exclure tous les fichiers de test
           /node_modules/,
           /(ngfactory|ngstyle)\.js/,
         ],

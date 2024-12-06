@@ -9,7 +9,8 @@ module.exports = {
   verbose: false,
   collectCoverage: true,
   coverageDirectory: './coverage/jest',
-  testPathIgnorePatterns: ['<rootDir>/node_modules/'],
+  coverageReporters: ['html', 'text-summary'], // Générer des rapports HTML et un résumé texte
+  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/src/environments/'],
   coveragePathIgnorePatterns: ['<rootDir>/node_modules/'],
   coverageThreshold: {
     global: {
